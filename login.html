@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title> Login page </title>
+<link href="login.css" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
+    <script>
+function GEEKFORGEEKS()                                    
+{ 
+    var name = document.forms["RegForm"]["username"];               
+    var password = document.forms["RegForm"]["pass"];  
+   
+    if (name.value == "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+   
+    if (password.value == "")                        
+    { 
+        window.alert("Please enter your password"); 
+        password.focus(); 
+        return false; 
+    } 
+   
+    return true; 
+}</script> 
+    
+    
+    </script>
+</head>
+    
+<body >
+   <div class="signin">
+   <form name="RegForm" action="index.html" onsubmit="return GEEKFORGEEKS()" method="post">
+       <h2 style="color: white"> Log In </h2>
+       <input type="text" name="username" placeholder="Username"><br><br>
+       <input type="password" name="pass" placeholder="Password" size="15"><br><br>
+       <a><input type="submit" value="Log In"/></a><br><br>
+       <div id="container">
+       <a href="reset.html" style=" margin-right: 0px;  font-family:Tahoma, Geneva, sans-serif;"
+       class="btns"> Reset password </a>
+       <a href="forgot.html" style=" margin-right: 0px; font-family:Tahoma, Geneva, sans-serif;" 
+       class="btns"> Forgot Password </a>
+       </div><br><br><br><br><br>
+       Don't have an Account?<a href="signup.html">&nbsp;Sign Up</a>
+       
+       </form> 
+       
+   </div>
+</body>
+    
+    
+    
+    
+    
+    
+</html>
